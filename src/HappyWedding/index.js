@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { HappyWeddingWrapper } from "./style";
 import Navigation from "./Navigation";
 import IntroWedding from "./IntroWedding";
@@ -13,7 +13,7 @@ const HappyWedding = () => {
   const AnimateOnScroll = ({ children, animationClass = "fade-in" }) => {
     const [isVisible, setIsVisible] = useState(false);
     const elementRef = useRef(null);
-  
+
     useEffect(() => {
       const observer = new IntersectionObserver(
         ([entry]) => {
@@ -23,22 +23,22 @@ const HappyWedding = () => {
           }
         },
         {
-          threshold: 0.1,
-          rootMargin: "-80px 0px",
+          threshold: 0.01,
+          rootMargin: "-50px 0px",
         }
       );
-  
+
       if (elementRef.current) {
         observer.observe(elementRef.current);
       }
-  
+
       return () => {
         if (elementRef.current) {
           observer.unobserve(elementRef.current);
         }
       };
     }, []);
-  
+
     // Use CSS classes instead of inline styles to prevent overriding
     return (
       <div
@@ -58,7 +58,6 @@ const HappyWedding = () => {
     "/assets/images/happy.jpg",
     "/assets/images/happy.jpg",
     "/assets/images/happy.jpg",
-
   ];
   useEffect(() => {
     // Add the animation CSS classes
@@ -88,24 +87,23 @@ const HappyWedding = () => {
       <Navigation />
       <IntroWedding />
       <AnimateOnScroll>
-      <Information />
+        <Information />
       </AnimateOnScroll>
       <AnimateOnScroll>
-      <SliderWedding />
+        <SliderWedding />
       </AnimateOnScroll>
       <AnimateOnScroll>
-      <DateTime />
+        <DateTime />
       </AnimateOnScroll>
       <AnimateOnScroll>
-      <Calendar />
+        <Calendar />
       </AnimateOnScroll>
       <AnimateOnScroll>
-      <AddressWedding />
+        <AddressWedding />
       </AnimateOnScroll>
       <AnimateOnScroll>
-      <WeddingAlbum images = {images} />
+        <WeddingAlbum images={images} />
       </AnimateOnScroll>
-      
     </HappyWeddingWrapper>
   );
 };

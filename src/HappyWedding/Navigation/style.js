@@ -8,6 +8,7 @@ export const NavigationWrapper = styled.div`
   z-index: 111;
   background-attachment: fixed;
   background-color: transparent;
+  background-color: gray;
 
   ul {
     display: flex;

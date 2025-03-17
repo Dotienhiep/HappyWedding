@@ -7,6 +7,9 @@ export const IntroWeddingWrapper = styled.div`
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  position: relative;
+  z-index: 11;
+  top: -20px;
   &::before {
     content: "";
     position: absolute;
