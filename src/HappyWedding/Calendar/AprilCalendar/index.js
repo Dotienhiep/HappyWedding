@@ -41,7 +41,15 @@ const Day = styled.div`
 `;
 
 const AprilCalendar = () => {
-  const daysOfWeek = ["Thứ 2", "Thứ 3", "Thứ 4", "Thứ 5", "Thứ 6", "Thứ 7", "CN"];
+  const daysOfWeek = [
+    "Thứ 2",
+    "Thứ 3",
+    "Thứ 4",
+    "Thứ 5",
+    "Thứ 6",
+    "Thứ 7",
+    "CN",
+  ];
   const heartDays = [12];
 
   // Các ngày trong tháng 4/2025, ngày 1 bắt đầu từ thứ Ba
@@ -50,7 +58,7 @@ const AprilCalendar = () => {
     ["7", "8", "9", "10", "11", "12", "13"],
     ["14", "15", "16", "17", "18", "19", "20"],
     ["21", "22", "23", "24", "25", "26", "27"],
-    ["28", "29", "30", "", "", "", ""]
+    ["28", "29", "30", "", "", "", ""],
   ];
 
   return (

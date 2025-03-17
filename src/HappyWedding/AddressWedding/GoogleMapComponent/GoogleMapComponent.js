@@ -3,6 +3,8 @@ import { GoogleMap, useLoadScript } from "@react-google-maps/api";
 const containerStyle = {
   width: "400px",
   height: "200px",
+  margin: "20px 0",
+  borderRadius: "5px",
 };
 
 const center = {
@@ -17,7 +19,9 @@ const GoogleMapComponent = () => {
 
   if (!isLoaded) return <div>Loading...</div>;
 
-  return <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15} />;
+  return (
+    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={15} />
+  );
 };
 
 export default GoogleMapComponent;

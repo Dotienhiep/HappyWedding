@@ -17,10 +17,17 @@ const images = [
 const SliderWedding = () => {
   return (
     <SliderWeddingWrapper className="slider-container">
-        <div className="content-text-slider">
-            <span className="title-message" style={{ fontFamily: "'Dancing Script', cursive" }}>Thư mời</span>
-            <span className="title-message-act">Tới tham dự tiệc cưới của Hiệp và Mẫn</span>
-        </div>
+      <div className="content-text-slider">
+        <span
+          className="title-message"
+          style={{ fontFamily: "'Dancing Script', cursive" }}
+        >
+          Thư mời
+        </span>
+        <span className="title-message-act">
+          Tới tham dự tiệc cưới của Hiệp và Mẫn
+        </span>
+      </div>
       <Swiper
         effect={"coverflow"}
         grabCursor={true}

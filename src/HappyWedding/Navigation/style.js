@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NavigationWrapper = styled.div`
-position: fixed;
+  position: fixed;
   top: 0;
   width: 100%;
   padding: 12px 0;
@@ -17,7 +17,7 @@ position: fixed;
   }
 
   li {
-   cursor: pointer;
+    cursor: pointer;
   }
   li a {
     color: #000;

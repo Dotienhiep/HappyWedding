@@ -28,8 +28,15 @@ const IntroWedding = () => {
           <div className="underline">|</div>
           <div className="date-day">12/04/2025</div>
         </div>
-        <div className="sub-date-day">( Tức ngày 15/03/2025 âm lịch năm Ất Tỵ )</div>
-        <div className="text-lign" style={{ fontFamily: "'Dancing Script', cursive" }}>Một hành trình mới bắt đầu từ hôm nay.</div>
+        <div className="sub-date-day">
+          ( Tức ngày 15/03/2025 âm lịch năm Ất Tỵ )
+        </div>
+        <div
+          className="text-lign"
+          style={{ fontFamily: "'Dancing Script', cursive" }}
+        >
+          Một hành trình mới bắt đầu từ hôm nay.
+        </div>
       </div>
     </IntroWeddingWrapper>
   );

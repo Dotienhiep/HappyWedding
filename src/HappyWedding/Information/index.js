@@ -24,11 +24,14 @@ const Information = () => {
           >
             Bà Lê Thị Trâm Anh
           </div>
-          <div className="text-address" style={{ fontFamily: "'Dancing Script', cursive" }}>
+          <div
+            className="text-address"
+            style={{ fontFamily: "'Dancing Script', cursive" }}
+          >
             38 Nguyễn Xuân Ôn, p2, Bình Thạnh, Hồ Chí Minh.
           </div>
           <div className="image-icon-bride">
-            <img src="/assets/images/bride-icon.png" alt=""/>
+            <img src="/assets/images/bride-icon.png" alt="" />
           </div>
           <div
             className="content-text-bride"
@@ -70,11 +73,14 @@ const Information = () => {
           >
             Bà Đoàn Thị Hơn
           </div>
-          <div className="text-address" style={{ fontFamily: "'Dancing Script', cursive" }}>
+          <div
+            className="text-address"
+            style={{ fontFamily: "'Dancing Script', cursive" }}
+          >
             Xóm 6, Nam Điền, Nghĩa Hưng, Nam Định.
           </div>
           <div className="image-icon-groom">
-            <img src="/assets/images/grooom-icon.png" alt=""/>
+            <img src="/assets/images/grooom-icon.png" alt="" />
           </div>
           <div
             className="content-text-bride"
