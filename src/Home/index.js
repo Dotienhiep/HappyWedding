@@ -12,27 +12,32 @@ const Home = () => {
   return (
     <HomeWrapper>
       <div className="container">
-      {showInvite && (
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <div className="card">
-            <h1 className="title">Lời Mời Đám Cưới</h1>
-            <p className="text">
-              Hân hạnh kính mời bạn đến dự lễ cưới của bọn mình.
-            </p>
-            <p className="highlightText">Hiệp 💖 Mẫn khùng</p>
-            <p className="text">📅 Thời gian: 18:00, Ngày 12/04/2025</p>
-            <p className="text">
-              📍 Địa điểm: Nhà Hàng Aquajardin, TP.HCM
-            </p>
-            <button className="button"><Link to="/happywedding">Xác nhận tham dự</Link></button>
-          </div>
-        </motion.div>
-      )}
-    </div>
+        {showInvite && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
+            <div className="card">
+              <h1 className="title">Lời Mời Đám Cưới</h1>
+              <p className="text">
+                Hân hạnh kính mời bạn đến dự lễ cưới của bọn mình.
+              </p>
+              <p className="highlightText" style={{ fontFamily: "'Dancing Script', cursive" }}>Tiến Hiệp 💖 Gia Mẫn</p>
+              <p className="text">📅 Thời gian: 18:00, Ngày 12/04/2025</p>
+              <p className="text">📍 Địa điểm: Nhà Hàng Aquajardin, TP.HCM</p>
+              <button className="button">
+                <Link to="/happywedding">
+                  <span className="icon-confirm">
+                    <img src="/assets/images/pink-icon.png" alt="" />
+                  </span>
+                  <span className="title-confirm">Xác nhận lời mời</span>
+                </Link>
+              </button>
+            </div>
+          </motion.div>
+        )}
+      </div>
     </HomeWrapper>
   );
 };

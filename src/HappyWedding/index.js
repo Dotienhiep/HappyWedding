@@ -4,6 +4,9 @@ import Navigation from "./Navigation";
 import IntroWedding from "./IntroWedding";
 import Information from "./Information";
 import SliderWedding from "./SliderWedding";
+import DateTime from "./DateTime";
+import Calendar from "./Calendar";
+import AddressWedding from "./AddressWedding";
 
 const HappyWedding = () => {
 
@@ -13,6 +16,10 @@ const HappyWedding = () => {
       <IntroWedding />
       <Information />
       <SliderWedding />
+      <DateTime />
+      <Calendar />
+      <AddressWedding />
+      
 
 
     </HappyWeddingWrapper>
